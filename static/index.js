@@ -57,8 +57,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     processComplete = function() {
         try {
-            const baseUrl = window.location.origin;
-            document.location = `${baseUrl}/thankyoupage.html`;
+            // const baseUrl = window.location.origin;
+            // document.location = `${baseUrl}/thankyoupage.html`;
+            document.location = "/thankyoupage.html";
         } catch (error) {
             console.error('An error occurred while processing the completion:', error);
             // You can handle the error here, such as showing an error message to the user
@@ -67,8 +68,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     processTerminated = function() {
         try {
-            const baseUrl = window.location.origin;
-            document.location = `${baseUrl}/404.html`;
+            // const baseUrl = window.location.origin;
+            // document.location = `${baseUrl}/404.html`;
+            document.location = "/404.html";
         } catch (error) {
             console.error('An error occurred while processing the completion:', error);
             // You can handle the error here, such as showing an error message to the user
